@@ -35,7 +35,9 @@ basic.forever(function () {
     }
     if (Bullet.isTouching(Enemy) && !(Bullet.get(LedSpriteProperty.Y) == 4)) {
         game.addScore(1)
-        Speed += -30
+        if (Speed >= 300) {
+            Speed += -30
+        }
         Enemy.set(LedSpriteProperty.X, randint(0, 4))
         Enemy.set(LedSpriteProperty.Y, 0)
     }
