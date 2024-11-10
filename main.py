@@ -18,6 +18,8 @@ Bullet: game.LedSprite = None
 Player: game.LedSprite = None
 Speed = 800
 Player = game.create_sprite(2, 4)
+Player2 = game.create_sprite(1, 4)
+Player3 = game.create_sprite(3, 4)
 Enemy = game.create_sprite(randint(0, 4), 0)
 Bullet = game.create_sprite(2, 4)
 game.set_life(5)
